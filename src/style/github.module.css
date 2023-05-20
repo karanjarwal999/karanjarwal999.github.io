@@ -1,0 +1,19 @@
+.gitSection_MainDiv{
+    height: 100vh;
+    scroll-snap-align: start;
+    padding-top: 9vh;
+    background-color: rgb(15,15,15);
+}
+.gitSection_MainDiv>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.gitSection_MainDiv>h1>img{
+    background-color: white;;
+    border-radius: 100%;
+    padding: 1px;
+}

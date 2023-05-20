@@ -1,0 +1,12 @@
+    #app_div::-webkit-scrollbar {
+    color: rgb(249, 197, 141);
+  }
+
+  #app_div{
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  

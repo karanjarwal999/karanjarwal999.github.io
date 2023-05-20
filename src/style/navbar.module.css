@@ -1,0 +1,108 @@
+.navbar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2vw;
+    height: 8vh;
+    width: 100%;
+    border: 1px solid rgb(254, 145, 25);;
+    border-top: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    position: fixed;
+    
+}
+.navbar>h1{
+    /* name logo */
+   font-size: 30px;
+   font-weight: 750;
+   letter-spacing: 2px;
+}
+.navbar>h1:nth-child(3){
+   color: red;
+}
+.navbar>div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.navbar>div>ul{
+    /* list  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-weight: 700;
+}
+.navbar>div>ul>a:hover{
+    /* list  hover*/
+   color: rgb(254, 145, 25);;
+   text-decoration: underline rgb(254, 145, 25);;
+   transform: scale(1.1);
+   padding-bottom: 5px;
+}
+.themeLogo{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+#Drawer{
+    font-size: 25px;
+    display: none;
+}
+
+/*when menu become  responsive  */
+.responsive_menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 8px;
+}
+.responsive_menu>a{
+   text-align: center;
+   font-weight: 700;
+   display: inline;
+}
+.responsive_menu>a:hover{
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+.responsive_menu>a:nth-child(7){
+   color: rgb(254, 145, 25);
+}
+
+@media screen and (max-width: 1250px) and (min-width: 900px) {
+    .navbar>div>ul{
+        font-size: 20px;
+        gap: 15px;
+        font-weight: 600;
+    }
+    .themeLogo{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 750px) {
+    .navbar>div>ul{
+        /* list  */
+        font-size: 15px;
+        gap: 15px;
+        font-weight: 600;
+    }
+    .themeLogo{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #Drawer{
+        display: block;
+        
+    }
+    .navbar>div>ul{
+        display: none;
+    }
+    .themeLogo{
+        font-size: 20px;
+    }
+}
