@@ -11,6 +11,7 @@
     cursor: pointer;
     letter-spacing: 1px;
     position: fixed;
+    z-index: 100;
     
 }
 .navbar>h1{

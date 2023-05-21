@@ -1,110 +1,159 @@
-.about_section{
+.about_section {
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 8vh;
     scroll-snap-align: start;
 }
-.aboutHeading{
+
+.aboutHeading {
     text-align: center;
     font-size: 40px;
     font-weight: 600;
     cursor: default;
 }
-.aboutHeading>span{
-   color: rgb(254, 145, 25);
+
+.aboutHeading>span {
+    color: rgb(254, 145, 25);
 }
 
-.about_section>div{
+.about_section>div {
     height: 82vh;
     display: grid;
     grid-template-columns: 49% 50%;
 }
 
-.leftImg_div{
+.leftImg_div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.leftImg_div>img{
+
+.leftImg_div>img {
     width: 80%;
 }
-.right_info{
+
+.right_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.right_info>div:nth-child(1){
+
+.right_info>div:nth-child(1) {
     display: grid;
     grid-template-columns: 5% 94%;
     row-gap: 20px;
     font-size: 20px;
 }
-.activityInfo{
-   display: grid;
-   margin-top: 30px;
-   width: 100%;
-   grid-template-columns: repeat(3,30%);
-   justify-content: space-evenly;
+
+.activityInfo {
+    display: grid;
+    margin-top: 30px;
+    width: 100%;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-evenly;
 }
-.activityInfo>div{
-   padding: 10px;
-   border: 2px solid rgb(254, 145, 25) ;
-   border-radius: 30px;
-   text-align: center;
-   cursor: default;
+
+.activityInfo>div {
+    padding: 10px;
+    border: 2px solid rgb(254, 145, 25);
+    border-radius: 30px;
+    text-align: center;
+    cursor: default;
 }
-.activityInfo>div>p:nth-child(1){
-    color:rgb(254, 145, 25) ;
+
+.activityInfo>div>p:nth-child(1) {
+    color: rgb(254, 145, 25);
     font-size: 25px;
     font-weight: 600;
 }
-.activityInfo>div>p:nth-child(2){
-    font-size: 25px;
+
+.activityInfo>div>p:nth-child(2) {
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+.activityInfo>div>p:nth-child(3) {
+    font-size: 15px;
 }
 
-.activityInfo>div:hover{
-   transform: scale(1.1);
+.activityInfo>div:hover {
+    transform: scale(1.1);
 }
 
-@media screen and (max-width: 900px) and (min-width: 750px) {
-    .right_info>div:nth-child(1){ 
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .right_info>div:nth-child(1) {
         row-gap: 15px;
         font-size: 17px;
     }
-  
-  }
-  
-  @media screen and (max-width: 750px) {
-    .about_section>div{
+}
+
+@media screen and (max-width: 900px) and (min-width: 750px) {
+    .right_info>div:nth-child(1) {
+        row-gap: 10px;
+        font-size: 17px;
+    }
+    .activityInfo>div {
+        padding: 5px;
+    }
+    .activityInfo {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .about_section>div {
         display: flex;
         gap: 20px;
         flex-direction: column;
     }
-    .right_info>div:nth-child(1){ 
-        row-gap: 15px;
-        font-size: 15px;
-    }
-    .leftImg_div>img{
-        width: 55%;
-    }
-  }
-  
-  @media screen and (max-width: 400px) and (min-width:300px){
-    .right_info>div:nth-child(1){ 
+
+    .right_info>div:nth-child(1) {
         row-gap: 5px;
         font-size: 15px;
     }
-    .leftImg_div>img{
+
+    .leftImg_div>img {
+        width: 50%;
+    }
+    .activityInfo {
+        margin-top: 15px;
+    }
+    .activityInfo>div {
+        padding: 5px;
+    }
+    .activityInfo>div>p:nth-child(1) {
+        font-size: 20px;
+    }
+    .activityInfo>div>p:nth-child(2) {
+        font-size: 15px;
+    }
+    .activityInfo>div>p:nth-child(3) {
+        font-size: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) and (min-width:300px) {
+    .right_info>div:nth-child(1) {
+        row-gap: 5px;
+        font-size: 13px;
+    }
+
+    .leftImg_div>img {
         width: 55%;
     }
-  }
-  @media screen and (max-width: 300px) {
-    .right_info>div:nth-child(1){ 
+}
+
+@media screen and (max-width: 300px) {
+    .right_info>div:nth-child(1) {
         row-gap: 5px;
         font-size: 12px;
     }
-    .leftImg_div>img{
+
+    .leftImg_div>img {
         width: 55%;
     }
-  }
-
+}

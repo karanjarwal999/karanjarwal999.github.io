@@ -15,7 +15,7 @@ export default function Home() {
     const { theme } = useContext(AppTheme)
 
     return (
-        <div id='home' className={style.home_main_div} style={{backgroundColor:theme==='Light'?'rgb(234, 244, 255)':'rgb(10,10,10)',color:theme==='Light'?'black':'white'}}>
+        <section id='home' className={style.home_main_div} style={{backgroundColor:theme==='Light'?'rgb(234, 244, 255)':'rgb(10,10,10)',color:theme==='Light'?'black':'white'}}>
             <div>
 
                 <div className={style.homeDiv}>
@@ -53,6 +53,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
