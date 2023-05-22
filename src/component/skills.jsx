@@ -1,31 +1,35 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import style from '../style/skill.module.css'
 import Cs from '../media/icons/CS.svg'
 import Frontend from '../media/icons/frontend.svg'
 import Node from '../media/icons/node.svg'
 import Dsa from '../media/icons/dsa.svg'
+import {AppTheme} from '../ThemeProvider/theme'
+
 
 export default function Skills() {
+    let {theme}=useContext(AppTheme)
+
     return (
-        <section id='skills' className={style.skill_section}>
-            <h1>My <span>Skills</span></h1>
+        <section style={{color:theme==='Light'?'black':'white',backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15, 15, 15)'}} id='skills' className={style.skill_section}>
+            <h1 style={{color:theme==='Light'?'black':'white'}}>My <span>Skills</span></h1>
             <div className={style.main_skills}>
-                <div>
+                <div style={{border: theme === 'Light' ? '1px solid black':'1px solid white'}}>
                     <img src={Frontend} alt="" />
                     <h3>Frontend Development</h3>
                     <p>Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, building reusable codes, optimizing page loading times, and using a variety of markup languages to create the web pages using HTML5 / CSS & JavaScript.</p>
                 </div>
-                <div>
+                <div style={{border: theme === 'Light' ? '1px solid black':'1px solid white'}}>
                     <img src={Node} alt="" />
                     <h3>Backend Development</h3>
                     <p>Node.js is a powerful runtime environment that allows you to run JavaScript on the server-side. It has gained immense popularity for backend development due to its scalability, efficiency, and extensive package ecosystem.</p>
                 </div>
-                <div>
+                <div style={{border: theme === 'Light' ? '1px solid black':'1px solid white'}}>
                     <img src={Dsa} alt="" />
                     <h3>Data Structure & Algorithms</h3>
                     <p>A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem.Learning data structures and algorithms allow us to write efficient and optimized computer programs.</p>
                 </div>
-                <div>
+                <div style={{border: theme === 'Light' ? '1px solid black':'1px solid white'}}>
                     <img src={Cs} alt="" />
                     <h3>Communication </h3>
                     <p>Effective communication is the process of exchanging ideas, thoughts, opinions, knowledge, and data so that the message is received and understood with clarity and purpose. When we communicate effectively, both the sender and receiver feel satisfied..</p>

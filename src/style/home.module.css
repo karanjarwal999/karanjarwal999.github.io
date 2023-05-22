@@ -1,12 +1,8 @@
 .home_main_div {
   padding-top: 8vh;
-  height: 100vh;
- 
   color: white;
-  scroll-snap-align: start;
-
+  overflow: hidden;
 }
-
 .home_main_div>div {
   display: grid;
   grid-template-columns: 50% 49%;
@@ -301,6 +297,9 @@
     bottom: 40px;
     width: 300px;
   }
+  .basic_info {
+    height: 45vh;
+  }
 
   .img_div>div>p:nth-child(1) {
     width: 250px;
@@ -339,6 +338,9 @@
     font-size: 20px;
     word-spacing: 3px;
     letter-spacing: 1px;
+  }
+  .basic_info {
+    height: 42vh;
   }
   .basic_info>h1 {
     font-size: 35px;

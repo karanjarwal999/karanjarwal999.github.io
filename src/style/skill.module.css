@@ -57,6 +57,9 @@
 .tech_stack>div>img{
    width: 100%;
 }
+.tech_stack>div:nth-child(7)>img{
+   border-radius: 100%;
+}
 .tech_stack>div>p{
    padding: 5px 0px;
 }

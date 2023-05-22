@@ -7,6 +7,7 @@ import { AppTheme } from '../ThemeProvider/theme'
 export default function About() {
   const { theme } = useContext(AppTheme)
 
+  
   return (
     <section id='about' className={style.about_section} style={{ backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15, 15, 15)' }}>
       <h1 className={style.aboutHeading} style={{ color: theme === 'Light' ? 'black' : 'white' }}><span >About</span> Me</h1>

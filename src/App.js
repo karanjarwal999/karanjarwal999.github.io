@@ -3,6 +3,7 @@ import Home from "./component/home";
 import Github from "./component/github";
 import About from "./component/about";
 import Skills from "./component/skills";
+import Contact from "./component/contact";
 import './style/app.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About/>
       <Github/>
       <Skills/>
+      <Contact/>
     </div>
   )
 }

@@ -11,6 +11,7 @@
     font-size: 30px;
     font-weight: 600;
 }
+
 .gitSection_MainDiv>h1>img{
     background-color: white;;
     border-radius: 100%;
@@ -57,6 +58,9 @@
         height: 130px;
         width: 320px;
      }  
+     .gitSection_MainDiv{
+        height: 80vh;
+    }
 }
 @media screen and (max-width:750px) {
     .gitSection_MainDiv>div>div>img{
@@ -68,12 +72,19 @@
         height: 130px;
         width: 320px;
      }
+     .gitSection_MainDiv>h1{
+        padding-bottom: 20px;
+     }
      .gitSection_MainDiv>div{
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-top: 0px;
     }  
+    .gitSection_MainDiv{
+        height: 90vh;
+    }
+    
 }
 @media screen and (max-width:400px) {
     .gitSection_MainDiv>div>div>img{
@@ -91,4 +102,7 @@
         margin-top: 0px;
         padding: 0% 5%;
     }  
+    .gitSection_MainDiv{
+        height: 100vh;
+    }
 }
