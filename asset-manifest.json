@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.35736740.css",
-    "main.js": "/static/js/main.ac454175.js",
+    "main.css": "/static/css/main.c15772a8.css",
+    "main.js": "/static/js/main.3110b7de.js",
     "static/media/Karan_Jarwal_Resume.pdf": "/static/media/Karan_Jarwal_Resume.2ccacdc84d27b845608e.pdf",
     "static/media/myprofile.png": "/static/media/myprofile.db9800e9fe6fa30e2f90.png",
+    "static/media/emailI.png": "/static/media/emailI.cf85719b1cc90a1211ed.png",
     "static/media/node.svg": "/static/media/node.bf8c59f1db037f897aff62fe85cc33ba.svg",
     "static/media/github.svg": "/static/media/github.ebd452bf402237ef25876cdcac686676.svg",
     "index.html": "/index.html",
@@ -13,11 +14,11 @@
     "static/media/dsa.svg": "/static/media/dsa.035bab5e9e2caa0a7ff1100da6779e8e.svg",
     "static/media/CS.svg": "/static/media/CS.72a2c4ddd6d55415335d831d27337def.svg",
     "static/media/envelope-regular.svg": "/static/media/envelope-regular.7df8d589eacd0a7f40f5685b6e551065.svg",
-    "main.35736740.css.map": "/static/css/main.35736740.css.map",
-    "main.ac454175.js.map": "/static/js/main.ac454175.js.map"
+    "main.c15772a8.css.map": "/static/css/main.c15772a8.css.map",
+    "main.3110b7de.js.map": "/static/js/main.3110b7de.js.map"
   },
   "entrypoints": [
-    "static/css/main.35736740.css",
-    "static/js/main.ac454175.js"
+    "static/css/main.c15772a8.css",
+    "static/js/main.3110b7de.js"
   ]
 }
