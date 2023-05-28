@@ -5,6 +5,7 @@ import About from "./component/about";
 import Skills from "./component/skills";
 import Contact from "./component/contact";
 import './style/app.css'
+import Project from "./component/project";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Project/>
       <Github/>
       <Skills/>
       <Contact/>

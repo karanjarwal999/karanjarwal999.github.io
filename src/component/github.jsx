@@ -5,6 +5,7 @@ import { AppTheme } from '../ThemeProvider/theme'
 import GitHubCalendar from 'react-github-calendar';
 
 export default function Github() {
+  
   const { theme } = useContext(AppTheme)
 
   return (

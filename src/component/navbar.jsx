@@ -3,7 +3,7 @@ import { AppTheme } from '../ThemeProvider/theme'
 import style from '../style/navbar.module.css'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import { Drawer, DrawerCloseButton, DrawerContent, DrawerOverlay, useDisclosure} from '@chakra-ui/react'
-import Resume from '../media/resume/Karan_Jarwal_Resume.pdf'
+import Resume from '../media/resume/Karan-Jarwal-Resume.pdf'
 
 
 export default function Navbar() {

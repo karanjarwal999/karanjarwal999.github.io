@@ -5,7 +5,7 @@ import linkdinIcon from '../media/icons/linkedin.svg'
 import gitIcon from '../media/icons/github.svg'
 import callIcon from '../media/icons/phone-volume-solid.svg'
 import mailIcon from '../media/icons/envelope-regular.svg'
-import Resume from '../media/resume/Karan_Jarwal_Resume.pdf'
+import Resume from '../media/resume/Karan-Jarwal-Resume.pdf'
 import Profile from '../media/resume/myprofile.png'
 import { DownloadIcon, ViewIcon } from '@chakra-ui/icons';
 import { AppTheme } from '../ThemeProvider/theme';
