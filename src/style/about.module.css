@@ -105,7 +105,7 @@
 @media screen and (max-width: 750px) {
     .about_section>div {
         display: flex;
-        gap: 20px;
+        gap: 10px;
         flex-direction: column;
     }
     .about_section>h1{
@@ -135,6 +135,7 @@
     .activityInfo>div>p:nth-child(3) {
         font-size: 10px;
     }
+   
     
 }
 
@@ -151,7 +152,7 @@
         height:75vh ;
     }
     .about_section {
-        height: 90vh;
+        height: 95vh
     }
 }
 

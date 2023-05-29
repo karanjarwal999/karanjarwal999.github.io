@@ -3,10 +3,9 @@ import style from '../style/projects.module.css'
 import { ViewIcon } from '@chakra-ui/icons'
 import gitIcon from '../media/icons/github.svg'
 import { AppTheme } from '../ThemeProvider/theme'
+import { Toast } from '@chakra-ui/react'
 
-export default function Project() {
-
-
+export default function Project({flag}) {
 
     // Project images
     let homeAndStore = ['https://user-images.githubusercontent.com/119421686/226376698-1d47f485-7b85-4aa1-9d64-568525b122c9.png', 'https://user-images.githubusercontent.com/119421686/226377637-0f50089a-add5-4de6-81a7-ae73b0934e2c.png', 'https://user-images.githubusercontent.com/119421686/226378021-85665daa-4655-4a92-9d0a-7159cb42c195.png', 'https://user-images.githubusercontent.com/119421686/226378184-69e18a2f-3476-4dc2-9acf-27a597e24d5b.png', 'https://user-images.githubusercontent.com/119421686/226378360-e82ebc91-016d-4f62-945b-1c85021bd23b.png', 'https://user-images.githubusercontent.com/119421686/226378658-ee643d74-92d3-48e8-910a-702c2c9a43b6.png', 'https://user-images.githubusercontent.com/119421686/226378831-c1645ede-f11a-4059-9097-a145e859888a.png']
@@ -44,21 +43,25 @@ export default function Project() {
     }
 
     return (
-        <section id='projects' style={{ color: theme === 'Light' ? 'black' : 'white', backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15,15,15)' }}>
+        <section id='projects' style={{ color:'white', backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15,15,15)',position:'relative' }}>
+            <div className={style.projectAlert}  style={{display:flag?'block':'none'}}>
+            { Toast({ description: "Slide to see more projects",
+                status: 'success',  duration: 2000,})}
+            </div>
             <h1 className={style.project_heading}> My <span>Projects</span> </h1>
             <div className={style.outerProjectDiv}>
                 <button className="material-symbols-outlined" onClick={() => slideProjectLeft()} disabled={sliderbtn == 1 ? true : false}>arrow_back_ios_new</button>
                 <div className={style.projectDiv}>
                     <div id='project_Slider'>
                         <div id='firstCard' className={style.card}>
-                            <div className={`${style.conic} project-card`}>
-                                <div>
+                            <div className={`${style.conic}`}>
+                                <div className='project-card'>
                                     <div className={style.cardImgDiv}>
                                         <img src={homeAndStore[imgNum]} alt=" project img" />
                                     </div>
 
                                     <h2 className="project-title">Home & store</h2>
-                                    <p classNmae="project-description">This project is clone of Crate & Barrel, an international destination for lasting, modern furniture, textiles, kitchen, tableware and home decorations .</p>
+                                    <p className="project-description">This project is clone of Crate & Barrel, an international destination for lasting, modern furniture, textiles, kitchen, tableware and home decorations .</p>
                                     <p className="project-tech-stack"><b>Tech stack</b> : HTML | CSS | JS </p>
                                     <p>An<b> individual</b> project built in span of 5 days</p>
 
@@ -70,13 +73,13 @@ export default function Project() {
                             </div>
                         </div>
                         <div id='secondCard' className={style.card}>
-                            <div className={`${style.conic} project-card`}>
-                                <div>
+                            <div className={`${style.conic} `}>
+                                <div className='project-card'>
                                     <div className={style.cardImgDiv}>
                                         <img src={Gulmoher[imgNum]} alt=" project img" />
                                     </div>
                                     <h2 className="project-title">Gulmohar</h2>
-                                    <p classNmae="project-description">Clone of 1-800 Flowers, An E-commerce website of flowers and gift delivery. It includes various categories and brands according to the needs of customers</p>
+                                    <p className="project-description">Clone of 1-800 Flowers, An E-commerce website of flowers and gift delivery. It includes various categories and brands according to the needs of customers</p>
                                     <p className="project-tech-stack"><b>Tech stack</b> : HTML | CSS | JS </p>
                                     <p><b>Responsibility</b> : Admin page</p>
                                     <p>A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
@@ -89,17 +92,17 @@ export default function Project() {
                             </div>
                         </div>
                         <div className={style.card}>
-                            <div className={`${style.conic} project-card`}>
-                                <div>
+                            <div className={`${style.conic} `}>
+                                <div className='project-card'>
 
                                     <div className={style.cardImgDiv}>
                                         <img src={bathKit[imgNum]} alt=" project img" />
                                     </div>
                                     <h2 className="project-title">Bath Kit</h2>
-                                    <p classNmae="project-description">Project is clone of "bedbathandbeyond.com" An E-commerce website that sells all needs and furniture of bathroom to give it a new look !</p>
+                                    <p className="project-description">Project is clone of "bedbathandbeyond.com" An E-commerce website that sells all needs and furniture of bathroom to give it a new look !</p>
                                     <p className="project-tech-stack"><b>Tech stack</b> : HTML | CSS | JS </p>
                                     <p><b>Responsibility</b> : Product page</p>
-                                    <p>A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
+                                    <p className='project-card'>A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
                                 </div>
                                 <div className={style.cardVeiwProjectBtn}>
                                     <a className="project-github-link" href="https://github.com/WDwithSuraj/bed-bathandbeyond-clone"><img src={gitIcon} alt="git" /></a>

@@ -26,11 +26,11 @@
     grid-template-rows: auot auto;
     column-gap: 30px;
 }
-.gitSection_MainDiv>div>div>img{
+.gitInfo>img{
    height: 250px;
    width: 500px;
 }
-.gitSection_MainDiv>div>div:nth-child(2){
+.gitInfo:nth-child(2){
    height: 200px;
    width: 500px;
    display: flex;
@@ -40,21 +40,21 @@
 }
 
 @media screen and (max-width:1200px) and (min-width:900px) {
-    .gitSection_MainDiv>div>div>img{
+    .gitInfo>img{
         height: 220px;
         width: 400px;
      }
-     .gitSection_MainDiv>div>div:nth-child(2){
+     .gitInfo:nth-child(2){
         height: 160px;
         width: 400px;
      }  
 }
 @media screen and (max-width:900px) and (min-width:750px) {
-    .gitSection_MainDiv>div>div>img{
+    .gitInfo>img{
         height: 200px;
         width: 320px;
      }
-     .gitSection_MainDiv>div>div:nth-child(2){
+     .gitInfo:nth-child(2){
         height: 130px;
         width: 320px;
      }  
@@ -63,12 +63,12 @@
     }
 }
 @media screen and (max-width:750px) {
-    .gitSection_MainDiv>div>div>img{
+    .gitInfo>img{
         height: 130px;
         width: 320px;
         /* transform: scale(1.5); */
      }
-     .gitSection_MainDiv>div>div:nth-child(2){
+     .gitInfo:nth-child(2){
         height: 130px;
         width: 320px;
      }
@@ -87,11 +87,11 @@
     
 }
 @media screen and (max-width:400px) {
-    .gitSection_MainDiv>div>div>img{
+    .gitInfo>img{
         /* height: 130px; */
         width:100%;
      }
-     .gitSection_MainDiv>div>div:nth-child(2){
+     .gitInfo:nth-child(2){
         /* height: 130px; */
         width: 100%;
      }

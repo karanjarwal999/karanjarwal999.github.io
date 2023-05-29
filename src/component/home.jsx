@@ -9,6 +9,7 @@ import Resume from '../media/resume/Karan-Jarwal-Resume.pdf'
 import Profile from '../media/resume/myprofile.png'
 import { DownloadIcon, ViewIcon } from '@chakra-ui/icons';
 import { AppTheme } from '../ThemeProvider/theme';
+import Pulse from 'react-reveal/Pulse';
 
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
                 <div className={style.homeDiv}>
                     <div className={style.basic_info}>
                         <p> Hii <p className={style.hiiEmoji}>👋</p>, I'm </p>
-                        <h1 id="user-detail-name">Karan Jarwal</h1>
+                        <h1 id="user-detail-name"><Pulse>Karan Jarwal</Pulse></h1>
                         <div className={style.autoType}>
                             <Typewriter
 
@@ -39,8 +40,8 @@ export default function Home() {
                             <a href="tel:+917620943498"><button><img src={callIcon} alt="git" /></button></a>
                         </div>
                         <div className={style.resume_btn}>
-                            <a id="resume-link-1" href={Resume}><button>Resume <ViewIcon /> </button></a>
-                            <a id="resume-link-2" href={Resume} download><button><DownloadIcon /> </button></a>
+                            <a id="resume-link-1" href={Resume}><button id="resume-button-1">Resume <ViewIcon /> </button></a>
+                            <a id="resume-link-2" href={Resume} download><button id="resume-button-2"><DownloadIcon /> </button></a>
                         </div>
                     </div>
                 </div>
@@ -53,6 +54,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+            
         </section>
     )
 }

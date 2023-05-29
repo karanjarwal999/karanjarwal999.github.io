@@ -21,7 +21,7 @@
     gap: 2%;
     font-size: 15px;
 }
-.main_skills>div{
+.skillCard{
     padding: 20px;
     padding-bottom:  0px;
     box-shadow: white 0px 2px 8px 0px;
@@ -32,7 +32,7 @@
     scroll-snap-align: start;
     /* border: 2px solid red; */
 }
-.main_skills>div>img{
+.skillCard>img{
     width: 50px;
     height: 50px;
     background-color: rgb(254, 145, 25);
@@ -40,7 +40,7 @@
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.main_skills>div>h3{
+.skillCard>h3{
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
@@ -54,16 +54,16 @@
     padding: 30px 0px;
     text-align: center;
 }
-.tech_stack>div>img{
+.ttechCard>img{
    width: 100%;
 }
-.tech_stack>div:nth-child(7)>img{
+.techCard:nth-child(7)>img{
    border-radius: 100%;
 }
-.tech_stack>div>p{
+.ttechCard>p{
    padding: 5px 0px;
 }
-.tech_stack>div{
+.techCard{
    padding: 5%;
    display: flex;
    flex-direction: column;
@@ -86,13 +86,13 @@
         grid-template-rows: auto auto;
         font-size: 14px;
     }
-    .main_skills>div{
+    .skillCard{
         padding-bottom: 10px;
     }
     .tech_stack{
         grid-template-columns: repeat(7,12%);
     }
-    .tech_stack>div>p{
+    .techCard>p{
         font-size: 15px;
      }
 }
@@ -102,20 +102,20 @@
         grid-template-rows: auto auto auto auto;
         font-size: 14px;
     }
-    .main_skills>div{
+    .skillCard{
         padding-bottom: 10px;
     }
     .tech_stack{
         margin-top: 50px;
         grid-template-columns: repeat(5,15%);
     }
-    .tech_stack>div>p{
+    .ttechCard>p{
         font-size: 15px;
      }
-     .main_skills>div>img{
+     .skillCard>img{
         margin-bottom: 5px;
     }
-    .main_skills>div>h3{
+    .skillCard>h3{
         margin-bottom: 5px;
     }
 }
@@ -130,13 +130,13 @@
         margin-top: 50px;
         grid-template-columns: repeat(5,18%);
     }
-    .tech_stack>div>p{
+    .techCard>p{
         font-size: 12px;
      }
-    .main_skills>div>h3{
+    .skillCard>h3{
         font-size: 16px;
     }
-    .main_skills>div>p{
+    .skillCard>p{
         font-size: 11px;
     }
 }
