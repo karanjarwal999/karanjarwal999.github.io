@@ -9,14 +9,14 @@ export default function About() {
 
   
   return (
-    <section id='about' className={style.about_section} style={{ backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15, 15, 15)' }}>
+    <section id='about' className={`${style.about_section} about section`} style={{ backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15, 15, 15)' }}>
       <h1 className={style.aboutHeading} style={{ color: theme === 'Light' ? 'black' : 'white' }}><span >About</span> Me</h1>
       <div>
         <div className={style.leftImg_div}>
           <img src="https://cdn.dribbble.com/users/1292677/screenshots/6139167/media/fcf7fd0c619bb87706533079240915f3.gif" alt="" />
         </div>
         <div className={style.right_info}>
-          <div style={{ color: theme === 'Light' ? 'black' : 'white' }}>
+          <div id="user-detail-intro" style={{ color: theme === 'Light' ? 'black' : 'white' }}>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
             <p>Hey, I'm  karan jarwal and I enjoy creating thing that live on the internet.</p>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />

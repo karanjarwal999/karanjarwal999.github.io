@@ -21,7 +21,7 @@ export default function Home() {
                 <div className={style.homeDiv}>
                     <div className={style.basic_info}>
                         <p> Hii <p className={style.hiiEmoji}>👋</p>, I'm </p>
-                        <h1>Karan Jarwal</h1>
+                        <h1 id="user-detail-name">Karan Jarwal</h1>
                         <div className={style.autoType}>
                             <Typewriter
 
@@ -39,8 +39,8 @@ export default function Home() {
                             <a href="tel:+917620943498"><button><img src={callIcon} alt="git" /></button></a>
                         </div>
                         <div className={style.resume_btn}>
-                            <a href={Resume}><button>Resume <ViewIcon /> </button></a>
-                            <a href={Resume} download><button><DownloadIcon /> </button></a>
+                            <a id="resume-link-1" href={Resume}><button>Resume <ViewIcon /> </button></a>
+                            <a id="resume-link-2" href={Resume} download><button><DownloadIcon /> </button></a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ export default function Home() {
                     <div>
                         <p></p>
                         <p></p>
-                        <img src={Profile} alt="" />
+                        <img className="home-img" src={Profile} alt="" />
                     </div>
                 </div>
             </div>

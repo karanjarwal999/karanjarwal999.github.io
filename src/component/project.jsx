@@ -20,29 +20,29 @@ export default function Project() {
     let [sliderbtn, setSliderBtn] = useState(1)
     const [imgNum, setImgNum] = useState(0)
     useEffect(() => {
-        let timer=setInterval(() => {
+        let timer = setInterval(() => {
             setImgNum((prev) =>
                 prev === 6 ? prev - 6 : prev + 1
             )
         }, 2000);
 
-        return()=>{
+        return () => {
             clearInterval(timer)
         }
+
     }, [])
 
     function slideProjectRight() {
-        setSliderBtn((prev)=>prev+1)
+        setSliderBtn((prev) => prev + 1)
         let value = document.getElementById('secondCard').clientWidth
         document.getElementById('project_Slider').scrollLeft += value;
     }
     function slideProjectLeft() {
-        setSliderBtn((prev)=>prev-1)
+        setSliderBtn((prev) => prev - 1)
         let value = document.getElementById('secondCard').clientWidth
         document.getElementById('project_Slider').scrollLeft -= value;
     }
 
-    console.log(sliderbtn)
     return (
         <section id='projects' style={{ color: theme === 'Light' ? 'black' : 'white', backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15,15,15)' }}>
             <h1 className={style.project_heading}> My <span>Projects</span> </h1>
@@ -51,66 +51,66 @@ export default function Project() {
                 <div className={style.projectDiv}>
                     <div id='project_Slider'>
                         <div id='firstCard' className={style.card}>
-                            <div className={style.conic}>
+                            <div className={`${style.conic} project-card`}>
                                 <div>
                                     <div className={style.cardImgDiv}>
                                         <img src={homeAndStore[imgNum]} alt=" project img" />
                                     </div>
 
-                                    <h2>Home & store</h2>
-                                    <p>This project is clone of Crate & Barrel, an international destination for lasting, modern furniture, textiles, kitchen, tableware and home decorations .</p>
-                                    <p><b>Tech stack</b> : HTML | CSS | JS </p>
+                                    <h2 className="project-title">Home & store</h2>
+                                    <p classNmae="project-description">This project is clone of Crate & Barrel, an international destination for lasting, modern furniture, textiles, kitchen, tableware and home decorations .</p>
+                                    <p className="project-tech-stack"><b>Tech stack</b> : HTML | CSS | JS </p>
                                     <p>An<b> individual</b> project built in span of 5 days</p>
-                                    
+
                                 </div>
                                 <div className={style.cardVeiwProjectBtn}>
-                                    <a href="https://github.com/karanjarwal999/flowing-liquid-9868"><img src={gitIcon} alt="git" /></a>
-                                    <a href=" https://flowingliquid.netlify.app/"><button><ViewIcon /></button></a>
+                                    <a className="project-github-link" href="https://github.com/karanjarwal999/flowing-liquid-9868"><img src={gitIcon} alt="git" /></a>
+                                    <a className="project-deployed-link" href=" https://flowingliquid.netlify.app/"><button><ViewIcon /></button></a>
                                 </div>
                             </div>
                         </div>
                         <div id='secondCard' className={style.card}>
-                            <div className={style.conic}>
+                            <div className={`${style.conic} project-card`}>
                                 <div>
                                     <div className={style.cardImgDiv}>
                                         <img src={Gulmoher[imgNum]} alt=" project img" />
                                     </div>
-                                    <h2>Gulmohar</h2>
-                                    <p>Clone of 1-800 Flowers, An E-commerce website of flowers and gift delivery. It includes various categories and brands according to the needs of customers</p>
-                                    <p><b>Tech stack</b> : HTML | CSS | JS </p>
+                                    <h2 className="project-title">Gulmohar</h2>
+                                    <p classNmae="project-description">Clone of 1-800 Flowers, An E-commerce website of flowers and gift delivery. It includes various categories and brands according to the needs of customers</p>
+                                    <p className="project-tech-stack"><b>Tech stack</b> : HTML | CSS | JS </p>
                                     <p><b>Responsibility</b> : Admin page</p>
                                     <p>A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
                                 </div>
                                 <div className={style.cardVeiwProjectBtn}>
-                                    <a href="https://github.com/nikhil-pillare/groovy-airplane-6414"><img src={gitIcon} alt="git" /></a>
-                                    <a href="https://gulmohar-the-flower-shop.netlify.app/"><button><ViewIcon /></button></a>
+                                    <a className="project-github-link" href="https://github.com/nikhil-pillare/groovy-airplane-6414"><img src={gitIcon} alt="git" /></a>
+                                    <a className="project-deployed-link" href="https://gulmohar-the-flower-shop.netlify.app/"><button><ViewIcon /></button></a>
 
                                 </div>
                             </div>
                         </div>
                         <div className={style.card}>
-                            <div className={style.conic}>
+                            <div className={`${style.conic} project-card`}>
                                 <div>
 
                                     <div className={style.cardImgDiv}>
                                         <img src={bathKit[imgNum]} alt=" project img" />
                                     </div>
-                                    <h2>Bath Kit</h2>
-                                    <p>Project is clone of "bedbathandbeyond.com" An E-commerce website that sells all needs and furniture of bathroom to give it a new look !</p>
-                                    <p><b>Tech stack</b> : HTML | CSS | JS </p>
+                                    <h2 className="project-title">Bath Kit</h2>
+                                    <p classNmae="project-description">Project is clone of "bedbathandbeyond.com" An E-commerce website that sells all needs and furniture of bathroom to give it a new look !</p>
+                                    <p className="project-tech-stack"><b>Tech stack</b> : HTML | CSS | JS </p>
                                     <p><b>Responsibility</b> : Product page</p>
                                     <p>A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
                                 </div>
                                 <div className={style.cardVeiwProjectBtn}>
-                                    <a href="https://github.com/WDwithSuraj/bed-bathandbeyond-clone"><img src={gitIcon} alt="git" /></a>
-                                    <a href="dancing-frangollo-fd368f.netlify.app/"><button><ViewIcon /></button></a>
+                                    <a className="project-github-link" href="https://github.com/WDwithSuraj/bed-bathandbeyond-clone"><img src={gitIcon} alt="git" /></a>
+                                    <a className="project-deployed-link" href="dancing-frangollo-fd368f.netlify.app/"><button><ViewIcon /></button></a>
 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button className="material-symbols-outlined" onClick={() => { slideProjectRight() }} disabled={sliderbtn==3?true:false}>arrow_forward_ios</button>
+                <button className="material-symbols-outlined" onClick={() => { slideProjectRight() }} disabled={sliderbtn == 3 ? true : false}>arrow_forward_ios</button>
             </div>
         </section>
     )
