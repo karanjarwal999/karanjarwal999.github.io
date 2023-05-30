@@ -11,7 +11,11 @@ export default function About() {
 
   return (
     <section id='about' className={`${style.about_section} about section`} style={{ backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15, 15, 15)' }}>
-      <h1 className={style.aboutHeading} style={{ color: theme === 'Light' ? 'black' : 'white' }}><span >About</span> Me</h1>
+
+      <h1 className={style.aboutHeading} style={{ color: theme === 'Light' ? 'black' : 'white' }}>
+        <span >About</span> Me
+      </h1>
+
       <div>
         <div className={style.leftImg_div}>
           <Fade left delay='500'>
@@ -22,13 +26,13 @@ export default function About() {
         <div className={style.right_info}>
           <div id="user-detail-intro" style={{ color: theme === 'Light' ? 'black' : 'white' }}>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
-            <p>Hey, I'm  karan jarwal and I enjoy creating thing that live on the internet.</p>
+              <p>Hey, I'm  karan jarwal and I enjoy creating thing that live on the internet.</p>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
-            <p>Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack.</p>
+              <p>Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack.</p>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
-            <p>Full Stack Developer with hands on experience in building React Apps. Works efficiently both in frontend as well as backend and is proficient in Data Structure and Algorithms with good problem solving skills.</p>
+              <p>Full Stack Developer with hands on experience in building React Apps. Works efficiently both in frontend as well as backend and is proficient in Data Structure and Algorithms with good problem solving skills.</p>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
-            <p>I have built 4 Team and 3 Individual projects. Learned a great deal about teamwork, leadership, and communication. After months of rigorous training, and  I am looking for an opportunity as a full Stack web Developer.</p>
+              <p>I have built 4 Team and 3 Individual projects. Learned a great deal about teamwork, leadership, and communication. After months of rigorous training, and  I am looking for an opportunity as a full Stack web Developer.</p>
           </div>
           <Fade bottom delay='200'>
             <div className={style.activityInfo}>

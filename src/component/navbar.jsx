@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { AppTheme } from '../ThemeProvider/theme'
 import style from '../style/navbar.module.css'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
@@ -22,11 +22,16 @@ export default function Navbar() {
     
   },[])
 
-
+ function CloseDrawerAuto () {
+    setTimeout(() => {
+      onClose()
+    }, 1000);
+ }
 
   return (
 
     <nav id='nav-menu' className={style.navbar} style={{ color: theme === 'Light' ? 'black' : 'white', backgroundColor: theme === 'Light' ? 'rgb(225, 250, 280)' : 'black' }}>
+
       <h1><span style={{ color: 'rgb(254, 145, 25)' }}>K</span>ARAN</h1>
       <div>
         <ul>
@@ -38,7 +43,10 @@ export default function Navbar() {
           <a href="#contact" className='nav-link contact'>CONTACT</a>
           <a style={{color:'rgb(254, 145, 25)'}} href={Resume} className='nav-link resume'>RESUME</a>
         </ul>
-        <h1 className={style.themeLogo} onClick={() => { ToggleTheme() }}>{theme === 'Light' ? <MoonIcon /> : <SunIcon />}</h1>
+        
+        <h1 className={style.themeLogo} onClick={() => { ToggleTheme() }}>
+          {theme === 'Light' ? <MoonIcon /> : <SunIcon />}
+        </h1>
 
         {/* side drawer button visible only  <= 750px */}
 
@@ -65,13 +73,13 @@ export default function Navbar() {
               color={theme === 'Light' ? 'black' : 'white'}
             />
             <ul  className={style.responsive_menu}>
-              <a href="#home" className='nav-link home'>HOME</a>
-              <a href="#about" className='nav-link about'>ABOUT</a>
-              <a href="#projects" className='nav-link projects'>PROJECTS</a>
-              <a href="#github">GITHUB</a>
-              <a href="#skills" className='nav-link skills'>SKILLS</a>
-              <a href="#contact" className='nav-link contact'>CONTACT</a>
-              <a href={Resume} className='nav-link resume'>RESUME</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href="#home" className='nav-link home'>HOME</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href="#about" className='nav-link about'>ABOUT</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href="#projects" className='nav-link projects'>PROJECTS</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href="#github">GITHUB</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href="#skills" className='nav-link skills'>SKILLS</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href="#contact" className='nav-link contact'>CONTACT</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href={Resume} className='nav-link resume'>RESUME</a>
             </ul>
           </DrawerContent>
         </Drawer>

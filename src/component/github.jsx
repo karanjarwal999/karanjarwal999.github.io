@@ -13,10 +13,12 @@ export default function Github({ projectRef }) {
     <section id='github' ref={projectRef}
       className={style.gitSection_MainDiv}
       style={{ backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15,15,15)' }}>
+
       <h1 style={{ color: theme === 'Light' ? 'black' : 'white' }}>Github
         <span style={{ color: 'rgb(254, 145, 25)' }}>Overview</span>
         <img style={{ width: '30px' }} src={gitIcon} alt="" />
       </h1>
+      
       <div>
         <Fade left delay='500'>
         <div className={style.gitInfo}>

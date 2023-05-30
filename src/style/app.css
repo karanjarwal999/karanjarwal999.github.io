@@ -1,6 +1,7 @@
     #app_div::-webkit-scrollbar {
     color: rgb(249, 197, 141);
   }
+  
 
   #app_div{
     overflow-y: scroll;

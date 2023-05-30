@@ -48,19 +48,13 @@ export default function Home() {
 
                 <div className={style.img_div}>
                     <div>
+                        {/* roteteing  2 elements in back of image */}
                         <p></p>
                         <p></p>
                         <img className="home-img" src={Profile} alt="" />
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
             
         </section>
     )
