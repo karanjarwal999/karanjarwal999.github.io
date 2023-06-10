@@ -55,14 +55,14 @@ export default function Home() {
                                 </a>
                             </button>
                         </div>
-                        <div className={style.resume_btn}>
+                        <section id='resume' className={style.resume_btn}>
                             <button id="resume-button-1">
                                 <a id="resume-link-1" href={Resume}>Resume <ViewIcon /></a>
                             </button>
                             <button id="resume-button-2">
-                                <a id="resume-link-2" href={Resume} download><DownloadIcon /> </a>
+                                <a id="resume-link-2" href='https://github.com/karanjarwal999/karanjarwal999.github.io/files/11713021/Karan-Jarwal-Resume.pdf' download><DownloadIcon /> </a>
                             </button>
-                        </div>
+                        </section>
                     </div>
                 </div>
 

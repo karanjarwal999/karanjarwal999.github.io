@@ -41,7 +41,7 @@ export default function Navbar() {
           <a href="#github">GITHUB</a>
           <a href="#skills" className='nav-link skills'>SKILLS</a>
           <a href="#contact" className='nav-link contact'>CONTACT</a>
-          <a style={{color:'rgb(254, 145, 25)'}} href={Resume} className='nav-link resume'>RESUME</a>
+          <a style={{color:'rgb(254, 145, 25)'}} href={Resume} id="resume-button-1" className='nav-link resume'>RESUME</a>
         </ul>
         
         <h1 className={style.themeLogo} onClick={() => { ToggleTheme() }}>
@@ -79,7 +79,7 @@ export default function Navbar() {
               <a onClick={()=>{CloseDrawerAuto()}} href="#github">GITHUB</a>
               <a onClick={()=>{CloseDrawerAuto()}} href="#skills" className='nav-link skills'>SKILLS</a>
               <a onClick={()=>{CloseDrawerAuto()}} href="#contact" className='nav-link contact'>CONTACT</a>
-              <a onClick={()=>{CloseDrawerAuto()}} href={Resume} id="resume-button-1" className='nav-link resume'>RESUME</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href={Resume} className='nav-link resume'>RESUME</a>
             </ul>
           </DrawerContent>
         </Drawer>
