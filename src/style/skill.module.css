@@ -66,6 +66,9 @@
    flex-direction: column;
    justify-content: space-between;
 }
+.cypress_logo>img{
+    border-radius: 100%;
+}
 
 
 @media screen and (max-width:1200px) and (min-width:900px) {

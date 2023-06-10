@@ -103,10 +103,14 @@
 }
 
 @media screen and (max-width: 750px) {
+    .about_section {
+        height: 105vh
+    }
     .about_section>div {
         display: flex;
         gap: 10px;
         flex-direction: column;
+        height: auto;
     }
     .about_section>h1{
         margin-bottom: 20px;
@@ -169,6 +173,6 @@
         height:75vh ;
     }
     .about_section {
-        height: 92vh;
+        height: 95vh;
     }
 }

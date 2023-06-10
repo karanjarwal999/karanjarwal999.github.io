@@ -32,7 +32,7 @@ export default function Navbar() {
 
     <nav id='nav-menu' className={style.navbar} style={{ color: theme === 'Light' ? 'black' : 'white', backgroundColor: theme === 'Light' ? 'rgb(225, 250, 280)' : 'black' }}>
 
-      <h1><span style={{ color: 'rgb(254, 145, 25)' }}>K</span>ARAN</h1>
+      <h1><span style={{ color: 'rgb(254, 145, 25)' }}>K</span><a href="#home">ARAN</a></h1>
       <div>
         <ul>
           <a href="#home" className='nav-link home'>HOME</a>
@@ -79,7 +79,7 @@ export default function Navbar() {
               <a onClick={()=>{CloseDrawerAuto()}} href="#github">GITHUB</a>
               <a onClick={()=>{CloseDrawerAuto()}} href="#skills" className='nav-link skills'>SKILLS</a>
               <a onClick={()=>{CloseDrawerAuto()}} href="#contact" className='nav-link contact'>CONTACT</a>
-              <a onClick={()=>{CloseDrawerAuto()}} href={Resume} className='nav-link resume'>RESUME</a>
+              <a onClick={()=>{CloseDrawerAuto()}} href={Resume} id="resume-button-1" className='nav-link resume'>RESUME</a>
             </ul>
           </DrawerContent>
         </Drawer>

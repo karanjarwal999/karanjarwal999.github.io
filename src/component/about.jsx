@@ -26,15 +26,15 @@ export default function About() {
         <div className={style.right_info}>
           <div id="user-detail-intro" style={{ color: theme === 'Light' ? 'black' : 'white' }}>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
-              <p>Hey, I'm  karan jarwal and I enjoy creating thing that live on the internet.</p>
+              <p>Are you looking for a developer who enjoy creating thing that live on the internet.</p>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
-              <p>Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack.</p>
+              <p>hii, I'm karan. A quick learner and an aspiring full-stack web developer with core knowledge of HTML, Css, JavaScript and MERN stack.</p>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
               <p>Full Stack Developer with hands on experience in building React Apps. Works efficiently both in frontend as well as backend and is proficient in Data Structure and Algorithms with good problem solving skills.</p>
             <CheckCircleIcon color={'rgb(254, 145, 25)'} marginTop='5px' />
-              <p>I have built 4 Team and 3 Individual projects. Learned a great deal about teamwork, leadership, and communication. After months of rigorous training, and  I am looking for an opportunity as a full Stack web Developer.</p>
+              <p>I have built 4 Team and 3 Individual projects. Learned a great deal about teamwork and communication. After months of rigorous training, and  I am looking for an opportunity as a full Stack web Developer.</p>
           </div>
-          <Fade bottom delay='200'>
+          <Fade top delay='200'>
             <div className={style.activityInfo}>
               <div style={{ backgroundColor: theme === 'Light' ? 'rgb(225, 250, 280)' : 'black' }}>
                 <p>1200+</p>

@@ -23,28 +23,28 @@ export default function Contact() {
                     <img src={emailPhoto} alt="" />
                 </div>
 
-                <Fade right delay='500'>
+                <Fade right delay='300' >
 
                     <div className={style.RightForm}>
                         <h4>Get In Touch</h4>
                         <div>
                             <a href="https://www.linkedin.com/in/karan-jarwal-86b890230/">
-                                <button id="contact-linkedin">
+                                <button >
                                     <img src={linkdinIcon} alt="linkdin" />
                                 </button>
                             </a>
                             <a href="https://github.com/karanjarwal999">
-                                <button id="contact-github" >
+                                <button >
                                     <img src={gitIcon} alt="git" />
                                 </button>
                             </a>
                             <a href="mailto:karanjarwal999@gmail.com">
-                                <button id="contact-email" >
+                                <button >
                                     <img src={mailIcon} alt="mail" />
                                 </button>
                             </a>
                             <a href="tel:+917620943498">
-                                <button id="contact-phone">
+                                <button >
                                     <img src={callIcon} alt="call" />
                                 </button>
                             </a>

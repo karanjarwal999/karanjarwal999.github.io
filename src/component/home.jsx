@@ -16,7 +16,7 @@ export default function Home() {
     const { theme } = useContext(AppTheme)
 
     return (
-        <section id='home' className={style.home_main_div} style={{backgroundColor:theme==='Light'?'rgb(234, 244, 255)':'rgb(10,10,10)',color:theme==='Light'?'black':'white'}}>
+        <section id='home' className={style.home_main_div} style={{ backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(10,10,10)', color: theme === 'Light' ? 'black' : 'white' }}>
             <div>
 
                 <div className={style.homeDiv}>
@@ -34,14 +34,34 @@ export default function Home() {
                             />
                         </div>
                         <div className={style.contactButton_div}>
-                            <a href="https://www.linkedin.com/in/karan-jarwal-86b890230/"><button><img src={linkdinIcon} alt="linkdin" /></button></a>
-                            <a href="https://github.com/karanjarwal999"><button><img src={gitIcon} alt="git" /></button></a>
-                            <a href="mailto:karanjarwal999@gmail.com"><button><img src={mailIcon} alt="git" /></button></a>
-                            <a href="tel:+917620943498"><button><img src={callIcon} alt="git" /></button></a>
+                            <button id="contact-linkedin">
+                                <a href="https://www.linkedin.com/in/karan-jarwal-86b890230/">
+                                    <img src={linkdinIcon} alt="linkdin" />
+                                </a>
+                            </button>
+                            <button id="contact-github" >
+                                <a href="https://github.com/karanjarwal999">
+                                    <img src={gitIcon} alt="git" />
+                                </a>
+                            </button>
+                            <button id="contact-email">
+                                <a href="mailto:karanjarwal999@gmail.com">
+                                    <img src={mailIcon} alt="email" />
+                                </a>
+                            </button>
+                            <button id='Contact-phone'>
+                                <a href="tel:+917620943498">
+                                    <img src={callIcon} alt="call" />
+                                </a>
+                            </button>
                         </div>
                         <div className={style.resume_btn}>
-                            <a id="resume-link-1" href={Resume}><button id="resume-button-1">Resume <ViewIcon /> </button></a>
-                            <a id="resume-link-2" href={Resume} download><button id="resume-button-2"><DownloadIcon /> </button></a>
+                            <button id="resume-button-1">
+                                <a id="resume-link-1" href={Resume}>Resume <ViewIcon /></a>
+                            </button>
+                            <button id="resume-button-2">
+                                <a id="resume-link-2" href={Resume} download><DownloadIcon /> </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -51,11 +71,15 @@ export default function Home() {
                         {/* roteteing  2 elements in back of image */}
                         <p></p>
                         <p></p>
-                        <img className="home-img" src={Profile} alt="" />
+                        <div>
+                            <img className="home-img" src={Profile} alt="" />
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
+
         </section>
     )
 }

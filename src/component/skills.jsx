@@ -13,58 +13,58 @@ export default function Skills() {
     let { theme } = useContext(AppTheme)
 
     return (
-        <section style={{ color: theme === 'Light' ? 'black' : 'white', backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15, 15, 15)' }} id='skills' className={style.skill_section}>
+        <section id='skills' style={{ color: theme === 'Light' ? 'black' : 'white', backgroundColor: theme === 'Light' ? 'rgb(234, 244, 255)' : 'rgb(15, 15, 15)' }}  className={style.skill_section}>
             <h1 style={{ color: theme === 'Light' ? 'black' : 'white' }}>My <span>Skills</span></h1>
             <div className={style.main_skills}>
                 <Flip left delay='500' >
-                    <div className={`skills-card ${style.skillCard}`} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
+                    <div className={style.skillCard} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
                         <img src={Frontend} alt="" />
                         <h3>Frontend Development</h3>
-                        <p className='.skills-card'>Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, I build responsive,
-                        efficient and fast loading web applications using a HTML5 | CSS | JavaScript and React.</p>
+                        <p>Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, I build responsive,
+                            efficient and fast loading web applications using a HTML5 | CSS | JavaScript and React.</p>
                     </div>
                 </Flip>
 
                 <Flip left delay='500'>
-                    <div className={`skills-card ${style.skillCard}`} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
+                    <div className={style.skillCard} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
                         <img src={Node} alt="" />
                         <h3>Backend Development</h3>
-                        <p className='.skills-card'>I use Node.js and  it provide us a powerful runtime environment that allows to run JavaScript on the server-side and It help us to Create more efficienct websites with faster backend</p>
+                        <p>I use Node.js and  it provide us a powerful runtime environment that allows to run JavaScript on the server-side and It help us to Create more efficienct websites with faster backend</p>
                     </div>
                 </Flip>
 
                 <Flip left delay='500'>
-                    <div className={`skills-card ${style.skillCard}`} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
-                        <img className="skills-card-img"  src={Dsa} alt="" />
-                        <h3 className="skills-card-name" >Data Structure & Algorithms</h3>
-                        <p className='.skills-card'>A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem.Learning data structures and algorithms allow us to write efficient and optimized computer programs.</p>
+                    <div className={style.skillCard} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
+                        <img src={Dsa} alt="" />
+                        <h3  >Data Structure & Algorithms</h3>
+                        <p >A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem.Learning data structures and algorithms allow us to write efficient and optimized computer programs.</p>
                     </div>
                 </Flip>
 
                 <Flip left delay='500'>
-                    <div className={`skills-card ${style.skillCard}`} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
-                        <img className="skills-card-img"  src={Cs} alt="" />
-                        <h3 className="skills-card-name" >Communication </h3>
+                    <div className={style.skillCard} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
+                        <img src={Cs} alt="" />
+                        <h3 >Communication </h3>
                         <p>Effective communication is the process of exchanging ideas, thoughts, opinions, knowledge, and data so that the message is received and understood with clarity and purpose. When we communicate effectively, both the sender and receiver feel satisfied..</p>
                     </div>
                 </Flip>
             </div>
-            <div className={style.tech_stack}>
-                <div className={style.techCard}>
-                    <img src="https://abhishek07788.github.io/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg" alt="" />
-                    <p>HTML</p>
+            <div  className={style.tech_stack}>
+                <div className={`skills-card ${style.techCard}`}>
+                    <img className="skills-card-img" src="https://abhishek07788.github.io/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg" alt="" />
+                    <p className="skills-card-name">HTML</p>
                 </div>
-                <div className={style.techCard}>
-                    <img src="https://abhishek07788.github.io/static/media/css.39769a8bd378bf410d6b381a8d88fa35.svg" alt="" />
-                    <p>CSS</p>
+                <div className={`skills-card ${style.techCard}`}>
+                    <img className="skills-card-img" src="https://abhishek07788.github.io/static/media/css.39769a8bd378bf410d6b381a8d88fa35.svg" alt="" />
+                    <p className="skills-card-name">CSS</p>
                 </div>
-                <div className={style.techCard}>
-                    <img src="https://camo.githubusercontent.com/7a2b6137fa6818b1c85f86347a6b4a75ee52681d4a190c506df972e3c5459980/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6a6176617363726970742d6f726967696e616c2e737667" alt="" />
-                    <p>JS</p>
+                <div className={`skills-card ${style.techCard}`}>
+                    <img className="skills-card-img" src="https://camo.githubusercontent.com/7a2b6137fa6818b1c85f86347a6b4a75ee52681d4a190c506df972e3c5459980/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6a6176617363726970742d6f726967696e616c2e737667" alt="" />
+                    <p className="skills-card-name">JS</p>
                 </div>
-                <div className={style.techCard}>
-                    <img src="https://abhishek07788.github.io/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg" alt="" />
-                    <p>REACT</p>
+                <div className={`skills-card ${style.techCard}`}>
+                    <img  className="skills-card-img" src="https://abhishek07788.github.io/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg" alt="" />
+                    <p className="skills-card-name">REACT</p>
                 </div>
                 <div className={style.techCard}>
                     <img src="https://camo.githubusercontent.com/b81456c0e15928e93c1e5f4d06b6a6938718d8f106a8169a570cd42b5e32f608/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f72656475782d6f726967696e616c2e737667" alt="" />
@@ -94,9 +94,9 @@ export default function Skills() {
                     <img src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667" alt="" />
                     <p>GIT</p>
                 </div>
-                <div className={style.techCard}>
-                    <img src="https://camo.githubusercontent.com/adb5a4ad9ef6595b2588c371f02296da3cb3533f4a7387a19f0818501e75f2ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6e706d2f6e706d2d6f726967696e616c2d776f72646d61726b2e737667" alt="" />
-                    <p>NPM</p>
+                <div className={`${style.techCard} ${style.cypress_logo}`}>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQdxT6NhE4J2sHQBo1z-bt10cjvHjbO5ftKg" alt="" />
+                    <p>Cypress</p>
                 </div>
                 <div className={style.techCard}>
                     <img src="https://camo.githubusercontent.com/dd4b2422ed3bfc9da88c43d18550375c66f9584327dff7ecc19315ce50b96f07/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f66697265626173652f66697265626173652d69636f6e2e737667" alt="" />

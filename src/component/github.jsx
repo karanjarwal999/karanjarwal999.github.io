@@ -34,7 +34,7 @@ export default function Github({ projectRef }) {
           </div>
         </Fade>
 
-        <Fade left delay='500'>
+        <Fade top delay='500'>
           <div className={style.gitInfo}>
             {theme === 'Light' ?
               <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=karanjarwal999&theme=flag-india&show_icons=true&locale=en" alt="karanjarwal999" /> :
@@ -42,7 +42,7 @@ export default function Github({ projectRef }) {
           </div>
         </Fade>
 
-        <Fade right delay='500'>
+        <Fade top delay='500'>
           <div className={style.gitInfo}>
             {theme === 'Light' ?
               <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=karanjarwal999&theme=flag-india&show_icons=true&locale=en&layout=compact" alt="karanjarwal999" /> :
