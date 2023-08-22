@@ -13,7 +13,7 @@
 }
 
 .basic_info {
-  height: 92vh;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -287,7 +287,7 @@
 
   .basic_info {
     padding-top: 50px;
-    justify-content: start;
+    justify-content: start; 
   }
 
   .img_div>div {
@@ -311,7 +311,7 @@
     width: 300px;
   }
   .basic_info {
-    height: 45vh;
+    height: 350px;
   }
 
   .img_div>div>p:nth-child(1) {
@@ -351,9 +351,6 @@
     font-size: 20px;
     word-spacing: 3px;
     letter-spacing: 1px;
-  }
-  .basic_info {
-    height: 42vh;
   }
   .basic_info>h1 {
     font-size: 35px;

@@ -20,21 +20,28 @@
 }
 .RightForm>div{
     display: flex;
-    margin: 20px 0px 10px 0px;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
     justify-content: center;
     gap: 20px;
 }
-.RightForm>div>a>button>img{
+.RightForm>div>div{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.RightForm>div>div>a>button>img{
     width: 100%;
 }
-.RightForm>div>a>button{
+.RightForm>div>div>a>button{
     width: 40px;
     padding: 5px;
     border: 4px solid rgb(254, 145, 25);
     background-color: white;
     border-radius: 30%;
 }
-.RightForm>div>a>button:hover{
+.RightForm>div>div>a>button:hover{
     background-color:rgb(254, 145, 25);
 }
 .RightForm>p{
@@ -58,7 +65,7 @@
     width: 400px;
     margin: auto;
     padding: 20px 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: 0.1px solid rgb(254, 145, 25),;
     border-radius: 20px;
 }

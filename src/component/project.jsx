@@ -4,7 +4,7 @@ import { ViewIcon } from '@chakra-ui/icons'
 import gitIcon from '../media/icons/github.svg'
 import { AppTheme } from '../ThemeProvider/theme'
 import { Toast, theme } from '@chakra-ui/react'
-import { homeAndStore, Calculator, bathKit, Gulmoher } from './projectImg'
+import { homeAndStore, Calculator, bathKit, Gulmoher, findMyTrip, Getflix } from './projectImg'
 import styled from 'styled-components'
 
 export default function Project({ flag }) {
@@ -30,9 +30,9 @@ export default function Project({ flag }) {
     useEffect(() => {
         let width = document.getElementById('projects')
         if (width.clientWidth <= 730) {
-            setlistMax(4)
+            setlistMax(6)
         } else {
-            setlistMax(3)
+            setlistMax(5)
         }
     }, [])
 
@@ -66,18 +66,59 @@ export default function Project({ flag }) {
                                 <div className={`project-card ${style.conic} `}>
                                     <div>
                                         <div className={style.cardImgDiv}>
+                                            <img className={style.cardImgDiv} src={Getflix[imgNum]} alt=" project img" />
+                                        </div>
+                                        <h2 className="project-title">Netflix Clone</h2>
+                                        <p className="project-description">Experience the ultimate entertainment destination with our Netflix-inspired platform. Our cutting-edge Netflix clone offers a vast library of movies, TV shows, documentaries, and original content, all at your fingertips.</p>
+                                        <p className="project-tech-stack"><b>Tech stack</b> : React | Redux </p>
+                                        <p>An<b> individual</b> project </p>
+
+                                    </div>
+                                    <div className={style.cardVeiwProjectBtn}>
+                                        <a target='_blank' rel='noreferrer' className="project-github-link" href="https://github.com/karanjarwal999/Getflix"><img src={gitIcon} alt="git" /></a>
+                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href="https://remarkable-begonia-d6e894.netlify.app" title='Go Live'><button><ViewIcon /></button></a>
+                                    </div>
+                                </div>
+                            </Conic>
+                        </div>
+                        <div className={style.card}>
+                            <Conic theme={`${theme}`}>
+                                <div className={`project-card ${style.conic} `}>
+                                    <div>
+                                        <div className={style.cardImgDiv}>
+                                            <img className={style.cardImgDiv} src={findMyTrip[imgNum]} alt=" project img" />
+                                        </div>
+
+                                        <h2 className="project-title">Find My Trip</h2>
+                                        <p className="project-description">User-friendly premier tour booking website. Our platform offers a diverse range of meticulously crafted tours, from exotic getaways to cultural explorations.</p>
+                                        <p className="project-tech-stack"><b>Tech stack</b> : React | Redux | Typescript </p>
+                                        <p><b>Responsibility</b> : Home / Landing page</p>
+                                        <p>A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
+                                    </div>
+                                    <div className={style.cardVeiwProjectBtn}>
+                                        <a target='_blank' rel='noreferrer' className="project-github-link" href="https://github.com/karanjarwal999/find-my-trip"><img src={gitIcon} alt="git" /></a>
+                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href="https://findmytrip.netlify.app/" title='Go Live'><button><ViewIcon /></button></a>
+                                    </div>
+                                </div>
+                            </Conic>
+                        </div>
+                        <div className={style.card}>
+                            <Conic theme={`${theme}`}>
+                                <div className={`project-card ${style.conic} `}>
+                                    <div>
+                                        <div className={style.cardImgDiv}>
                                             <img className={style.cardImgDiv} src={homeAndStore[imgNum]} alt=" project img" />
                                         </div>
 
                                         <h2 className="project-title">Home & store</h2>
-                                        <p className="project-description">This project is clone of Crate & Barrel, an international destination for lasting, modern furniture, textiles, kitchen, tableware and home decorations .</p>
+                                        <p className="project-description"> A user friendly E-commerce website that offers international destination for lasting, modern furniture, textiles, kitchen, tableware and home decorations at your door step. <b>[</b> Clone of Crate & Barrel website <b>]</b></p>
                                         <p className="project-tech-stack"><b>Tech stack</b> : HTML | CSS | JS </p>
                                         <p>An<b> individual</b> project built in span of 5 days</p>
 
                                     </div>
                                     <div className={style.cardVeiwProjectBtn}>
-                                        <a className="project-github-link" href="https://github.com/karanjarwal999/flowing-liquid-9868"><img src={gitIcon} alt="git" /></a>
-                                        <a className="project-deployed-link" href=" https://flowingliquid.netlify.app/" title='Go Live'><button><ViewIcon /></button></a>
+                                        <a target='_blank' rel='noreferrer' className="project-github-link" href="https://github.com/karanjarwal999/Home-and-store"><img src={gitIcon} alt="git" /></a>
+                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href=" https://flowingliquid.netlify.app/" title='Go Live'><button><ViewIcon /></button></a>
                                     </div>
                                 </div>
                             </Conic>
@@ -96,8 +137,8 @@ export default function Project({ flag }) {
                                         <p>A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
                                     </div>
                                     <div className={style.cardVeiwProjectBtn}>
-                                        <a className="project-github-link" href="https://github.com/nikhil-pillare/groovy-airplane-6414"><img src={gitIcon} alt="git" /></a>
-                                        <a className="project-deployed-link" href="https://kaleidoscopic-axolotl-77aca0.netlify.app/"><button><ViewIcon /></button></a>
+                                        <a target='_blank' rel='noreferrer' className="project-github-link" href="https://github.com/karanjarwal999/Golmohar"><img src={gitIcon} alt="git" /></a>
+                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href="https://kaleidoscopic-axolotl-77aca0.netlify.app/"><button><ViewIcon /></button></a>
 
                                     </div>
                                 </div>
@@ -118,8 +159,8 @@ export default function Project({ flag }) {
                                         <p >A <b>collaborative</b> project built by a team of 4 members within span of 5 day</p>
                                     </div>
                                     <div className={style.cardVeiwProjectBtn}>
-                                        <a className="project-github-link" href="https://github.com/WDwithSuraj/bed-bathandbeyond-clone"><img src={gitIcon} alt="git" /></a>
-                                        <a className="project-deployed-link" href="https://dancing-frangollo-fd368f.netlify.app/"><button><ViewIcon /></button></a>
+                                        <a target='_blank' rel='noreferrer' className="project-github-link" href="https://github.com/karanjarwal999/BathKit"><img src={gitIcon} alt="git" /></a>
+                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href="https://dancing-frangollo-fd368f.netlify.app/"><button><ViewIcon /></button></a>
 
                                     </div>
                                 </div>
@@ -138,8 +179,8 @@ export default function Project({ flag }) {
                                         <p >This page is build for Practicing skills and to know  more how the Calculator works </p>
                                     </div>
                                     <div className={style.cardVeiwProjectBtn}>
-                                        <a className="project-github-link" href="https://github.com/karanjarwal999/CALCULAT0R"><img src={gitIcon} alt="git" /></a>
-                                        <a className="project-deployed-link" href="https://dashing-frangollo-360334.netlify.app/" ><button><ViewIcon /></button></a>
+                                        <a target='_blank' rel='noreferrer' className="project-github-link" href="https://github.com/karanjarwal999/CALCULAT0R"><img src={gitIcon} alt="git" /></a>
+                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href="https://dashing-frangollo-360334.netlify.app/" ><button><ViewIcon /></button></a>
 
                                     </div>
                                 </div>

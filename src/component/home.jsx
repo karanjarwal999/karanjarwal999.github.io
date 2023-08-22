@@ -44,12 +44,12 @@ export default function Home() {
                                     <img src={gitIcon} alt="git" />
                                 </a>
                             </button>
-                            <button id="contact-email">
+                            <button >
                                 <a href="mailto:karanjarwal999@gmail.com">
                                     <img src={mailIcon} alt="email" />
                                 </a>
                             </button>
-                            <button id='Contact-phone'>
+                            <button >
                                 <a href="tel:+917620943498">
                                     <img src={callIcon} alt="call" />
                                 </a>
@@ -57,10 +57,10 @@ export default function Home() {
                         </div>
                         <section id='resume' className={style.resume_btn}>
                             <button id="resume-button-1">
-                                <a id="resume-link-1" href={Resume}>Resume <ViewIcon /></a>
+                                <a id="resume-link-1" href={Resume} target='_blank' rel='noreferrer'>Resume <ViewIcon /></a>
                             </button>
                             <button id="resume-button-2">
-                                <a id="resume-link-2" href='https://github.com/karanjarwal999/karanjarwal999.github.io/files/11713021/Karan-Jarwal-Resume.pdf' download><DownloadIcon /> </a>
+                                <a id="resume-link-2" href={Resume}  target='_blank'                      rel='noreferrer' download><DownloadIcon /> </a>
                             </button>
                         </section>
                     </div>

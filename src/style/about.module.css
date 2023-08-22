@@ -1,6 +1,7 @@
 .about_section {
-    height: 100vh;
-    padding-top: 8vh;
+    height: 750px;
+    /* border: 1px solid red; */
+    padding-top: 60px;
     scroll-snap-align: start;
 }
 
@@ -99,13 +100,10 @@
     .activityInfo {
         margin-top: 15px;
     }
-
 }
 
 @media screen and (max-width: 750px) {
-    .about_section {
-        height: 105vh
-    }
+   
     .about_section>div {
         display: flex;
         gap: 10px;
@@ -155,9 +153,7 @@
     .about_section>div{
         height:75vh ;
     }
-    .about_section {
-        height: 95vh
-    }
+    
 }
 
 @media screen and (max-width: 300px) {
@@ -172,7 +168,5 @@
     .about_section>div{
         height:75vh ;
     }
-    .about_section {
-        height: 95vh;
-    }
+    
 }

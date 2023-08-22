@@ -1,5 +1,6 @@
 .gitSection_MainDiv{
-    height: 100vh;
+    height: 700px;
+    /* border :1px solid red; */
     scroll-snap-align: start;
     padding-top: 10vh;
 }
@@ -48,6 +49,9 @@
         height: 160px;
         width: 400px;
      }  
+     .gitSection_MainDiv{
+        height: 650px;
+    }
 }
 @media screen and (max-width:900px) and (min-width:750px) {
     .gitInfo>img{
@@ -59,7 +63,7 @@
         width: 320px;
      }  
      .gitSection_MainDiv{
-        height: 80vh;
+        height: 600px;
     }
 }
 @media screen and (max-width:750px) {
@@ -81,9 +85,7 @@
         gap: 10px;
         margin-top: 0px;
     }  
-    .gitSection_MainDiv{
-        height: 90vh;
-    }
+    
     
 }
 @media screen and (max-width:400px) {
@@ -102,7 +104,5 @@
         margin-top: 0px;
         padding: 0% 5%;
     }  
-    .gitSection_MainDiv{
-        height: 100vh;
-    }
+    
 }

@@ -37,7 +37,7 @@ export default function Skills() {
                     <div className={style.skillCard} style={{ border: theme === 'Light' ? '1px solid black' : '1px solid white' }}>
                         <img src={Dsa} alt="" />
                         <h3  >Data Structure & Algorithms</h3>
-                        <p >A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem.Learning data structures and algorithms allow us to write efficient and optimized computer programs.</p>
+                        <p >A data structure is a named location that can be used to store and organize data. And Learning data structures and algorithms allow us to write efficient and optimized computer programs.</p>
                     </div>
                 </Flip>
 
@@ -51,11 +51,11 @@ export default function Skills() {
             </div>
             <div  className={style.tech_stack}>
                 <div className={`skills-card ${style.techCard}`}>
-                    <img className="skills-card-img" src="https://abhishek07788.github.io/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg" alt="" />
+                    <img className="skills-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVB4twv74Kv-OlgnOCa8NuMOP2DvpeK3kQcw" alt="" />
                     <p className="skills-card-name">HTML</p>
                 </div>
                 <div className={`skills-card ${style.techCard}`}>
-                    <img className="skills-card-img" src="https://abhishek07788.github.io/static/media/css.39769a8bd378bf410d6b381a8d88fa35.svg" alt="" />
+                    <img className="skills-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9KZaH2At9O6ORSQrve_NBkF88i45H-0OUFA" alt="" />
                     <p className="skills-card-name">CSS</p>
                 </div>
                 <div className={`skills-card ${style.techCard}`}>
@@ -63,7 +63,7 @@ export default function Skills() {
                     <p className="skills-card-name">JS</p>
                 </div>
                 <div className={`skills-card ${style.techCard}`}>
-                    <img  className="skills-card-img" src="https://abhishek07788.github.io/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg" alt="" />
+                    <img  className="skills-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ZBJJbgPJj5Xgn-_XPcwFz2obmJcXyKGIuA" alt="" />
                     <p className="skills-card-name">REACT</p>
                 </div>
                 <div className={style.techCard}>
@@ -71,7 +71,7 @@ export default function Skills() {
                     <p>REDUX</p>
                 </div>
                 <div className={style.techCard}>
-                    <img src="https://abhishek07788.github.io/static/media/nodejs.10c9e2aa0ca7edf36fceae25fec038a1.svg" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqmQvw0Jc4eiSQcQD_8qjjpiN1Lm1YugzX6A" alt="" />
                     <p>NODE</p>
                 </div>
                 <div className={style.techCard}>
@@ -79,7 +79,7 @@ export default function Skills() {
                     <p>EXPRESS</p>
                 </div>
                 <div className={style.techCard}>
-                    <img src="https://abhishek07788.github.io/static/media/mongodb.6835c61a518a732eb8318d43dfe8f700.svg" alt="" />
+                    <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png" alt="" />
                     <p>MONGO DB</p>
                 </div>
                 <div className={style.techCard}>
