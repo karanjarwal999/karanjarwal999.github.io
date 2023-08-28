@@ -76,7 +76,7 @@ export default function Project({ flag }) {
                                     </div>
                                     <div className={style.cardVeiwProjectBtn}>
                                         <a target='_blank' rel='noreferrer' className="project-github-link" href="https://github.com/karanjarwal999/Getflix"><img src={gitIcon} alt="git" /></a>
-                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href="https://remarkable-begonia-d6e894.netlify.app" title='Go Live'><button><ViewIcon /></button></a>
+                                        <a target='_blank' rel='noreferrer' className="project-deployed-link" href="https://papaya-quokka-0c2e99.netlify.app" title='Go Live'><button><ViewIcon /></button></a>
                                     </div>
                                 </div>
                             </Conic>
