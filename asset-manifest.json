@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae87e356.css",
-    "main.js": "/static/js/main.09c65f56.js",
+    "main.js": "/static/js/main.03af5d2b.js",
     "static/media/Karan-Jarwal-Resume.pdf": "/static/media/Karan-Jarwal-Resume.e250c851aa72ef669899.pdf",
     "static/media/myprofile.png": "/static/media/myprofile.c9516bb813d892c63240.png",
     "static/media/emailI.png": "/static/media/emailI.cf85719b1cc90a1211ed.png",
@@ -15,10 +15,10 @@
     "static/media/CS.svg": "/static/media/CS.72a2c4ddd6d55415335d831d27337def.svg",
     "static/media/envelope-regular.svg": "/static/media/envelope-regular.7df8d589eacd0a7f40f5685b6e551065.svg",
     "main.ae87e356.css.map": "/static/css/main.ae87e356.css.map",
-    "main.09c65f56.js.map": "/static/js/main.09c65f56.js.map"
+    "main.03af5d2b.js.map": "/static/js/main.03af5d2b.js.map"
   },
   "entrypoints": [
     "static/css/main.ae87e356.css",
-    "static/js/main.09c65f56.js"
+    "static/js/main.03af5d2b.js"
   ]
 }
