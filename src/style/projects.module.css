@@ -6,6 +6,7 @@
     padding-bottom: 20px;
 }
 
+
 .project_heading>span {
     color: rgb(254, 145, 25);
 }
@@ -13,23 +14,36 @@
 .projectAlert {
     position: fixed;
     top: 100px;
-    z-index: 5;
+    z-index: 7;
 }
 
 .outerProjectDiv {
     max-width: 1250px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     display: flex;
     gap: 2%;
+    overflow: hidden;
     align-items: center;
     padding-right: 0px;
+    justify-content: center;
+    overflow: hidden
 }
 
 .outerProjectDiv>button {
     font-size: 50px;
     color: rgb(254, 145, 25);
     animation: blink 1s ease infinite;
+    position: absolute;
+}
+.outerProjectDiv>button {
+   left: 0;
+   z-index: 5;
+}
+.outerProjectDiv>button:nth-child(3) {
+   right: 0;
+   z-index: 4;
+   text-align: end;
 }
 
 @keyframes blink {
@@ -41,13 +55,6 @@
         opacity: 100%;
     }
 }
-
-.outerProjectDiv>button:active {
-    background-color: rgb(253, 214, 173); 
-    border-radius: 100%;
-    
-}
-
 .outerProjectDiv>button:disabled {
     opacity: 0%;
     animation: none;
@@ -56,14 +63,19 @@
 .projectDiv>div {
     display: grid;
     gap: 3%;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
     grid-template-columns: repeat(6, 48%);
-    scroll-behavior: smooth;
 }
 
-.projectDiv>div::-webkit-scrollbar {
-    display: none;
+.projectDiv{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.projectDiv::-webkit-scrollbar {
+    background-color: transparent;
+    border: 1px solid rgb(253, 214, 173);
 }
 .conic{
     height: 100%;
@@ -79,6 +91,7 @@
     color: rgb(253, 214, 173);
 }
 .card {
+    z-index: 6;
     scroll-snap-align: start;
     box-sizing: border-box;
     background-color: black;
@@ -195,6 +208,9 @@
     .outerProjectDiv>button {
         font-size: 40px;
     }
+    .outerProjectDiv{
+        justify-content: start;
+    }
 }
 
 @media screen and (max-width:750px) and (min-width:400px) {
@@ -238,7 +254,7 @@
 @media screen and (max-width:400px) {
     .projectDiv>div {
         grid-template-columns: repeat(6, 98%);
-        width: 72vw;
+        width: 80vw;
     }
 
     .outerProjectDiv {

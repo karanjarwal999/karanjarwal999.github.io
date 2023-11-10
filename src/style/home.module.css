@@ -10,6 +10,27 @@
 
 .homeDiv {
   display: grid;
+  animation: infoIn 1s ease-in;
+  -webkit-animation: infoIn 1s ease-in;
+}
+
+@keyframes infoIn{
+ from{
+      transform: translateX(-70px);
+      -webkit-transform: translateX(-70px);
+      -moz-transform: translateX(-70px);
+      -ms-transform: translateX(-70px);
+      -o-transform: translateX(-70px);
+      opacity: 0%;
+}
+ to{
+      transform: translateX(0px);
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+      -o-transform: translateX(0px);
+      opacity: 100%;
+}
 }
 
 .basic_info {
@@ -62,6 +83,7 @@
   margin-top: 20px;
   display: flex;
   gap: 10px;
+  z-index: 3;
 }
 
 .contactButton_div>button>a>img {
@@ -83,6 +105,7 @@
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  z-index: 3;
 }
 
 .resume_btn>button {
@@ -154,7 +177,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: imgIn 1s ease-in ;
+  -webkit-animation: imgIn 1s ease-in ;
 }
+
+@keyframes imgIn{
+  from{
+       transform: translateX(70px);
+       -webkit-transform: translateX(70px);
+       -moz-transform: translateX(70px);
+       -ms-transform: translateX(70px);
+       -o-transform: translateX(70px);
+       opacity: 0%;
+}
+  to{
+       transform: translateX(0px);
+       -webkit-transform: translateX(0px);
+       -moz-transform: translateX(0px);
+       -ms-transform: translateX(0px);
+       -o-transform: translateX(0px);
+       opacity: 100%;
+ }
+ }
 
 @keyframes rotateSecond {
   0% {

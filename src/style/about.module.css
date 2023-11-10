@@ -1,5 +1,5 @@
 .about_section {
-    height: 750px;
+    /* height: 750px; */
     /* border: 1px solid red; */
     padding-top: 60px;
     scroll-snap-align: start;
@@ -10,6 +10,7 @@
     font-size: 40px;
     font-weight: 600;
     cursor: default;
+    margin-bottom: 40px;
 }
 
 .aboutHeading>span {
@@ -17,7 +18,7 @@
 }
 
 .about_section>div {
-    height: 82vh;
+    /* height: 82vh; */
     display: grid;
     grid-template-columns: 49% 50%;
 }

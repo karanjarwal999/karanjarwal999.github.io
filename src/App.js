@@ -34,7 +34,7 @@ function App() {
 
 
   return (
-    <div id="app_div">
+    <div id="app_div" style={{backgroundColor:'black'}}>
       <Navbar/>
       <Home/>
       <About/>

@@ -59,8 +59,8 @@ export default function Project({ flag }) {
             <h1 className={style.project_heading} style={{ color: theme === 'Light' ? 'black' : 'white' }}> My <span>Projects</span> </h1>
             <div className={style.outerProjectDiv}>
                 <button className="material-symbols-outlined" onClick={() => slideProjectLeft()} disabled={sliderbtn === 1 ? true : false}>arrow_back_ios_new</button>
-                <div className={style.projectDiv}>
-                    <div id='project_Slider' style={{ color: theme === 'Light' ? 'black' : 'white' }}>
+                <div id='project_Slider' className={style.projectDiv}>
+                    <div style={{ color: theme === 'Light' ? 'black' : 'white' }}>
                         <div id='firstCard' className={style.card}>
                             <Conic theme={`${theme}`}>
                                 <div className={`project-card ${style.conic} `}>

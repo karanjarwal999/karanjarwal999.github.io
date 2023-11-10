@@ -20,7 +20,7 @@ export default function Github({ projectRef }) {
       </h1>
       
       <div>
-        <Fade left delay='500'>
+        <Fade left delay='200'>
         <div className={style.gitInfo}>
           {theme === 'Light' ?
             <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=karanjarwal999&theme=flag-india&" alt="karanjarwal999" /> :
@@ -28,13 +28,13 @@ export default function Github({ projectRef }) {
             </div>
         </Fade>
 
-        <Fade right delay='500'>
+        <Fade right delay='200'>
           <div className={`${style.gitInfo} react-activity-calendar`} style={{ color: theme === 'Light' ? 'Black' : 'white', backgroundColor: theme === 'Light' ? 'white' : 'black', border: theme === 'Light' ? '1px solid lightgray' : '1px solid white' }}>
             <GitHubCalendar username="karanjarwal999" />
           </div>
         </Fade>
 
-        <Fade left delay='500'>
+        <Fade left delay='200'>
           <div className={style.gitInfo}>
             {theme === 'Light' ?
               <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=karanjarwal999&theme=flag-india&show_icons=true&locale=en" alt="karanjarwal999" /> :
@@ -42,7 +42,7 @@ export default function Github({ projectRef }) {
           </div>
         </Fade>
 
-        <Fade right delay='500'>
+        <Fade right delay='200'>
           <div className={style.gitInfo}>
             {theme === 'Light' ?
               <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=karanjarwal999&theme=flag-india&show_icons=true&locale=en&layout=compact" alt="karanjarwal999" /> :

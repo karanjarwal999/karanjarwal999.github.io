@@ -24,7 +24,7 @@ export default function Contact() {
                     <img src={emailPhoto} alt="" />
                 </div>
 
-                <Fade right delay='300' >
+                <Fade right delay='100' >
 
                     <div className={style.RightForm}>
                         <h4>Get In Touch</h4>

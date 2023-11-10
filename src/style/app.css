@@ -9,4 +9,20 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
   }
+
+  #tsparticles { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 110%;
+    padding: 0;
+    margin: 0;
+    z-index: 0
+  }
   
+  @media screen and (max-width: 900px) and (min-width: 750px) {
+    #tsparticles { 
+      width: 200%;
+    }
+  }
